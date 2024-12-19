@@ -85,8 +85,8 @@ func worker(
 func main() {
 	var counters TxnCounters
 	startTime := time.Now()
-	totalTxns := 500
-	numWorkers := 100
+	totalTxns := 500000
+	numWorkers := 1000
 	jobs := make(chan string, totalTxns)
 
 	// Initialize gateway once
